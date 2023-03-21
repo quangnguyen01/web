@@ -14,8 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 /* /index đổi thành / thì default nó sẽ ra trang chủ nếu ko thì phải /index nó mới ra trang chủ */
-Route::get('/', [HomeController::class, 'index'])
-->name('index');
+
+
+
+
+Route::get('/', [HomeController::class, 'index'])->name('index');
+Route::get('/products', [HomeController::class, 'productList'])->name('sanpham');
+Route::get('/product/{id}', [HomeController::class, 'productDetail'])->name('product-detail');
 
 Route::get('/chungtoi', function() {
     return view('clients.chungtoi');
@@ -28,6 +33,9 @@ Route::get('/service', function() {
 Route::get('/contact', function() {
     return view('clients.contact');
 })->name('contact');
+
+
+
 
 
 

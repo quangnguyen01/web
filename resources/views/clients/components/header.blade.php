@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4">
         <div class="container-fluid">
             <div class="logo">
-                <img src="images/3.png" alt="" width="100px"
+                <img src="/assets/images/3.png" alt="" width="100px"
                      style="padding: 10px">
                 <a class="navbar-brand" href="../views/index.html"></a>
             </div>
@@ -23,7 +23,7 @@
                         <a class="nav-link" aria-current="page" href="{{route('service')}}">Dịch vụ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../views/service">Sản phẩm</a>
+                        <a class="nav-link" aria-current="page" href="{{route('sanpham')}}">Sản phẩm</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="../views/contact.html"> Giải pháp </a>
