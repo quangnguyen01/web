@@ -58,15 +58,15 @@
                 <img src="{{$product->image}}" alt="">
             </div>
             <div class="col-6">
-                <h3>{{$product->name}}</h3>
-                <div>{!! html_entity_decode($product->description) !!}</div>
+                <h1>{{$product->name}}</h1>
+                <div style="font-size: 27px">{!! html_entity_decode($product->description) !!}</div>
             </div>
         </div>
         <hr>
         <div class="row">
-            <h5>Mô tả</h5>
-            <div>{!! html_entity_decode($product->content) !!}</div>
-        </div> thế thì phải thêm trường trong bảng product thì mới làm đc vậy 
+            <h1>Mô tả</h1>
+            <div style="font-size: 25px">{!! html_entity_decode($product->content) !!}</div>
+        </div>
         <hr>
         <div class="row">
             <h3>Sản phẩm tương tự</h3>

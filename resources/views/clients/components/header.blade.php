@@ -26,9 +26,6 @@
                         <a class="nav-link" aria-current="page" href="{{route('sanpham')}}">Sản phẩm</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../views/contact.html"> Giải pháp </a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="{{route('contact')}}"> Liên hệ </a>
                     </li>
                 </ul>

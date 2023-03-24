@@ -5,7 +5,7 @@
         <h2>Giới thiệu</h2>
         <p style="margin-left: 10px">Công ty TNHH Phát triển Công nghệ HDN được thành lập ngày 04/09/2020 dưới sự sáng lập của ông Nguyễn Hồng Sơn 
             và hiện cũng là giám đốc điều hành của công ty. Công ty chia thành các bộ phận từ bộ phận giám đốc tới các bộ phận
-             phòng ban như kế toán, nhân sự, bán hàng, đội giải pháp về công nghệ và đội thi công công trình. </p>
+            phòng ban như kế toán, nhân sự, bán hàng, đội giải pháp về công nghệ và đội thi công công trình. </p>
         <p style="margin-left: 10px">
         Xây dựng và phát triển công nghệ là một trong những nhiệm vụ cấp thiết của đất nước nói chung và Thành phố Hải Phòng nói riêng.
         Công ty mong muốn đóng góp những giải pháp công nghệ phù hợp với sự phát triển chung, những công trình xây dựng dân dụng, công nghiệp,
