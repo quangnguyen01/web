@@ -21,14 +21,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/products', [HomeController::class, 'productList'])->name('sanpham');
 Route::get('/product/{id}', [HomeController::class, 'productDetail'])->name('product-detail');
+Route::get('/services', [HomeController::class, 'services'])->name('services');
 
 Route::get('/chungtoi', function() {
     return view('clients.chungtoi');
 })->name('chungtoi');
 
-Route::get('/service', function() {
-    return view('clients.service');
-})->name('service');
 
 Route::get('/contact', function() {
     return view('clients.contact');

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Product;
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -32,5 +33,10 @@ class HomeController extends Controller
             'product' => $product,
             'products' => $products
         ]);
+    }
+
+    public function services() {
+        $service = Service::all();
+        return view('clients.service', ['service' => $service]);
     }
 }

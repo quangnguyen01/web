@@ -36,6 +36,8 @@
 <section>
     @yield('content')
 </section>
+
+@yield('end_banner')
 <!--Footer-->
 @include('clients.components.footer')
 
