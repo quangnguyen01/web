@@ -20,7 +20,7 @@
                         <a class="nav-link" aria-current="page" href="{{route('chungtoi')}}"> Chúng tôi </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{{route('service')}}">Dịch vụ</a>
+                        <a class="nav-link" aria-current="page" href="{{route('services')}}">Dịch vụ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="{{route('sanpham')}}">Sản phẩm</a>
