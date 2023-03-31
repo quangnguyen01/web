@@ -16,7 +16,7 @@ class HomeController extends Controller
 
     public function productList(Request $request) {
         $query = Product::query();
-        $category = $request->get('category');
+        $category = $request->get('categories');
 
         if ($category) {
             $query = $query->where('category_id', $category);

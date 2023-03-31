@@ -136,7 +136,7 @@
     <script>
         $(document).ready(function () {
             $('.btn_category').click(function () {
-                $('#category').val(this.slot)
+                $('#categories').val(this.slot)
                 $('#filter-form').submit()
             })
         });
