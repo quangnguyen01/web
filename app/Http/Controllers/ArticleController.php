@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Article;
-use App\Http\Requests\StoreArticleRequest;
+use App\Http\Requests\CategoriesRequest;
 use App\Http\Requests\UpdateArticleRequest;
 
 class ArticleController extends Controller
@@ -27,7 +27,7 @@ class ArticleController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreArticleRequest $request)
+    public function store(CategoriesRequest $request)
     {
         //
     }

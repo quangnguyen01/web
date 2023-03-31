@@ -2,33 +2,33 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\CategoriesRequest;
-use App\Models\Category;
+use App\Http\Requests\ServiceRequest;
+use App\Models\Service;
 use Illuminate\Http\Request;
 
-class CategoryController extends Controller
+class ServiceController extends Controller
 {
     public function create()
     {
-        return view('admin.categories.form', ['data' => null]);
+        return view('admin.services.form', ['data' => null]);
     }
 
-    public function store(CategoriesRequest $request)
+    public function store(ServiceRequest $request)
     {
         $request->validated();
-        $category = new Category();
+        $category = new Service();
         $category->name = $request->name;
         $category->image = $request->image;
         $category->description = $request->description;
         $category->save();
 
-        return redirect()->route('listCategory')
+        return redirect()->route('listService')
             ->with('success', 'Thêm mới thành công.');
     }
 
     public function list(Request $request)
     {
-        $queryBuilder = Category::query();
+        $queryBuilder = Service::query();
         $search = $request->get('search');
         $sort = $request->get('sort');
         if ($search || strlen($search) > 0) {
@@ -42,36 +42,36 @@ class CategoryController extends Controller
         }
         $data = $queryBuilder->orderBy('created_at','DESC')->paginate(10)->appends(['search' => $search]);
 
-        return view('admin.categories.table', [
-            'categories' => $data,
+        return view('admin.services.table', [
+            'services' => $data,
             'sort' => $sort
         ]);
     }
 
     public function edit($id)
     {
-        $categories = Category::find($id);
-        return view('admin.categories.form', ['data' => $categories]);
+        $categories = Service::find($id);
+        return view('admin.services.form', ['data' => $categories]);
     }
 
-    public function save(CategoriesRequest $request, $id)
+    public function save(ServiceRequest $request, $id)
     {
         $request->validated();
-        $category = Category::find($id);
+        $category = Service::find($id);
         $category->image = $request->image;
         $category->name = $request->name;
         $category->description = $request->description;
         $category->save();
 
-        return redirect()->route('listCategory')
+        return redirect()->route('listService')
             ->with('success', 'Update thành công.');
     }
 
     public function delete($id)
     {
-        $delete = Category::find($id);
+        $delete = Service::find($id);
         $delete->delete();
-        return redirect()->route('listCategory')
+        return redirect()->route('listService')
             ->with('success', 'Delete thành công.');
     }
 }

@@ -28,6 +28,9 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="{{route('contact')}}"> Liên hệ </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{{route('listProduct')}}"> Quản trị </a>
+                    </li>
                 </ul>
             </div>
         </div>
