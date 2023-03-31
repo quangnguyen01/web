@@ -24,12 +24,76 @@
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="/assets/css/index.css">
     @yield('custom_css')
+    <style>
+        .toolbar {
+            position: fixed;
+            bottom: 60px;
+            right: 22px;
+            z-index: 99999999;
+        }
+        .toolbar ul {
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+        }
+        .toolbar ul li {
+            position: relative;
+        }
+        .toolbar ul li .box-show {
+            padding-top: 10px;
+        }
+        .toolbar ul li .box-show img {
+            width: 40px;
+            height: 40px;
+        }
+        .toolbar ul li span {
+            font-weight: 400;
+            color: #333;
+            position: absolute;
+            top: 50%;
+            right: calc(100% + 10px);
+            right: -webkit-calc(100% + 10px);
+            right: -moz-calc(100% + 10px);
+            margin-top: -12.5px;
+            font-size: 14px;
+            height: 25px;
+            line-height: 25px;
+            padding: 0 10px;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+        }
+    </style>
     <title>HDNTech</title>
 </head>
 <body>
 <!--Header-->
 @include('clients.components.header')
-
+<div class="toolbar">
+    <ul>
+        <li>
+            <a href="tel:0868883322" id="devvn_contact_1" title="Hotline" class="animation_zoom">
+                <div class="box-show"><img width="64" height="64" src="https://hdntech.vn/wp-content/themes/hdn/images/call.png" class="attachment-full size-full entered lazyloaded" alt="" data-lazy-src="https://hdntech.vn/wp-content/themes/hdn/images/call.png" data-ll-status="loaded"><noscript><img width="64" height="64" src="https://hdntech.vn/wp-content/themes/hdn/images/call.png" class="attachment-full size-full" alt="" /></noscript></div>
+                <span>Hotline</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://zalo.me/2820439685183295678" target="_blank" id="devvn_contact_2" title="Chat Zalo" class="animation_swing">
+                <div class="box-show"><img width="63" height="63" src="https://hdntech.vn/wp-content/themes/hdn/images/zalo-2.png" class="attachment-full size-full entered lazyloaded" alt="" data-lazy-src="https://hdntech.vn/wp-content/themes/hdn./images/zalo-2.png" data-ll-status="loaded"><noscript><img width="63" height="63" src="https://hdntech.vn/wp-content/themes/hdn/images/zalo-2.png" class="attachment-full size-full" alt="" /></noscript></div>
+                <span>Chat Zalo</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://m.me/hdntech" target="_blank" id="devvn_contact_3" title="Chat Facebook" class="animation_tada">
+                <div class="box-show"><img width="60" height="60" src="https://hdntech.vn/wp-content/themes/hdn/images/mess.png" class="attachment-full size-full entered lazyloaded" alt="" data-lazy-src="https://hdntech.vn/wp-content/themes/hdn./images/mess.png" data-ll-status="loaded"><noscript><img width="60" height="60" src="https://hdntech.vn/wp-content/themes/hdn/images/mess.png" class="attachment-full size-full" alt="" /></noscript></div>
+                <span>Chat Facebook</span>
+            </a>
+        </li>
+    </ul>
+</div>
 @yield('banner')
 
 <!--Content-->

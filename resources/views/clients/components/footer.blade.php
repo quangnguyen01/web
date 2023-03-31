@@ -26,15 +26,11 @@
                         <h6 class="text-uppercase fw-bold mb-4">
                             Services
                         </h6>
-                        <p>
-                            
-                            <a href="#!" class="text-reset">Dịch vụ</a>
+                        <p> 
+                            <a href="{{route('services')}}" class="text-reset">Dịch vụ</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Sản phẩm công nghệ</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Giải pháp</a>
+                            <a href="{{route('sanpham')}}" class="text-reset">Sản phẩm công nghệ</a>
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -46,15 +42,15 @@
                             Hỗ trợ
                         </h6>
                         <p>
-                            <a href="../views/about.html" class="text-reset">Tổng quan</a>
+                            <a href="{{route('index')}}" class="text-reset">Trang chủ</a>
 
                         </p>
                         <p>
-                            <a href="../views/contact.html" class="text-reset">Liên hệ</a>
+                            <a href="{{route('contact')}}" class="text-reset">Liên hệ</a>
 
                         </p>
                         <p>
-                            <a href="../views/private-policy.html" class="text-reset">Chính sách quyền riêng tư</a>
+                            <a href="{{route('policy')}}" class="text-reset">Chính sách</a>
                         </p>
 
 

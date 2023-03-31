@@ -32,6 +32,10 @@ Route::get('/contact', function() {
     return view('clients.contact');
 })->name('contact');
 
+Route::get('/policy', function() {
+    return view('clients.policy');
+})->name('policy');
+
 
 
 
